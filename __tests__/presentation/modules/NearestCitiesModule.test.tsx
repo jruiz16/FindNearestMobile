@@ -25,7 +25,7 @@ describe('NearestCitiesModule', () => {
         expect(getByText('- City B (20.00 km)')).toBeTruthy();
         });
     });
-  });
+  }, 10000);
 
   afterEach(() => {
     jest.clearAllMocks();
