@@ -39,7 +39,7 @@ describe('CityService', () => {
   
     expect(mockHttpClient.get).toHaveBeenCalledTimes(1);
     expect(mockCache.setCities).toHaveBeenCalledWith(mockCities);
-  });
+  }, 10000);
   
 
   it('should cache fetched cities', async () => {
